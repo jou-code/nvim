@@ -13,7 +13,6 @@ rm -rf ~/.config/nvim && git clone git@github.com:jou-code/nvim.git ~/.config/nv
 - lazy.nvim 
 - 42header 
 - alpha-nvim 
-- conform.nvim 
 - diffview.nvim 
 - fidget.nvim 
 - gitsigns.nvim 

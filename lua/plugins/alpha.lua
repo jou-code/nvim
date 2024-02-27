@@ -26,7 +26,7 @@ return {
     }
     dashboard.section.buttons.val = {
       dashboard.button('d', '  > Dotfiles', ':cd ~/.config/nvim | :e init.lua<CR> | :NvimTreeToggle<CR>'),
-      dashboard.button('t', '✎  > Themes', ':cd ~/.config/nvim/lua | :e colors.lua<CR>'),
+      dashboard.button('t', '✎  > Themes', ':Themery<CR>'),
       dashboard.button('l', '󰒲  > Lazy', ':Lazy<CR>'),
       dashboard.button('q', '󰗼  > Quit', ':q!<CR>'),
     }

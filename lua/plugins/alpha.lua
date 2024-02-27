@@ -26,7 +26,7 @@ return {
     }
     dashboard.section.buttons.val = {
       dashboard.button('d', '  > Dotfiles', ':cd ' .. vim.fn.stdpath 'config' .. ' | :e init.lua<CR>'),
-      dashboard.button('t', '✎  > Themes', ':Themery<CR>'),
+      dashboard.button('t', '󰏫 > Themes', ':Themery<CR>'),
       dashboard.button('l', '󰒲  > Lazy', ':Lazy<CR>'),
       dashboard.button('q', '󰗼  > Quit', ':q!<CR>'),
     }

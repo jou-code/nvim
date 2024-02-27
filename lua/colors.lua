@@ -5,4 +5,5 @@
 vim.cmd.colorscheme 'tokyonight-moon'
 
 -- NOTE: Para mudar o tema apenas descomente a linha do tema desejado
--- e comente todos os outros temas que não serão utilizados
+-- e deixe comentado todos os outros temas que não serão utilizados. 
+-- Quando reiniciar o vim ou usar o comando :so o tema será aplicado

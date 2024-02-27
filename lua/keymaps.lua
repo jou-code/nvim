@@ -4,15 +4,15 @@ vim.keymap.set('n', '<leader>w', ':wincmd w<CR>', { desc = 'Move focus to next w
 vim.keymap.set('n', '<leader>a', ':vsplit <CR>', { desc = 'Split', silent = true })
 vim.keymap.set('n', '<leader>=', ':wincmd =<CR>', { desc = 'Equalize Buffers', silent = true })
 vim.keymap.set('n', '<leader>j', '<C-w><C-r>', { desc = 'Rotate Splits', silent = true })
-vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move to left window' })
+vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move to right window' })
+vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move to lower window' })
+vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move to upper window' })
 
-vim.keymap.set('n', '<leader>q', ':q<CR>', { desc = 'Close', silent = true })
+vim.keymap.set('n', '<leader>q', ':q<CR>', { desc = 'Close Buffer', silent = true })
 
-vim.keymap.set('n', '<leader>t', ':vsplit<CR>:terminal<CR>a', { desc = 'Open Vertical Terminal', silent = true })
-vim.keymap.set('n', '<leader>T', ':split<CR>:terminal<CR>a', { desc = 'Open Horizontal Terminal', silent = true })
+vim.keymap.set('n', '<leader>t', ':vsplit<CR>:terminal<CR>a', { desc = 'Vertical Terminal', silent = true })
+vim.keymap.set('n', '<leader>T', ':split<CR>:terminal<CR>a', { desc = 'Horizontal Terminal', silent = true })
 
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move line down', silent = true })
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move line up', silent = true })

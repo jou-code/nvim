@@ -1,26 +1,23 @@
-return { -- Useful plugin to show you pending keybinds.
+return {
   'folke/which-key.nvim',
-  event = 'VeryLazy', -- Sets the loading event to 'VeryLazy'
-  config = function() -- This is the function that runs, AFTER loading
-    require('which-key').setup = {
-      icons = {
-        breadcrumb = '»', -- symbol used in the command line area that shows your active key combo
-        separator = '➜', -- symbol used between a key and it's label
-        group = '', -- symbol prepended to a group
-      },
-      window = {
-        border = 'single', -- none, single, double, shadow
-        position = 'bottom', -- bottom, top
-        margin = { 0, 0, 0, 0 }, -- extra window margin [top, right, bottom, left]
-        padding = { 2, 2, 2, 2 }, -- extra window padding [top, right, bottom, left]
-        winblend = 0,
-      },
-      layout = {
-        height = { min = 5, max = 25 }, -- min and max height of the columns
-        width = { min = 20, max = 50 }, -- min and max width of the columns
-        spacing = 4, -- spacing between columns
-        align = 'left', -- align columns left, center or right
-      },
+  event = 'VeryLazy',
+  config = function()
+    require('which-key').setup = {}
+    require('which-key').register {
+      -- ['<leader>a'] = 'which_key_ignore',
+      -- ['<leader>e'] = 'which_key_ignore',
+      -- ['<leader>t'] = 'which_key_ignore',
+      -- ['<leader>T'] = 'which_key_ignore',
+      -- ['<leader>w'] = 'which_key_ignore',
+      -- ['<leader>1'] = 'which_key_ignore',
+      -- ['<leader>2'] = 'which_key_ignore',
+      -- ['<leader>3'] = 'which_key_ignore',
+      -- ['<leader>4'] = 'which_key_ignore',
+      -- ['<leader><leader>'] = 'which_key_ignore',
+      -- ['<leader><Tab>'] = 'which_key_ignore',
+      -- ['<leader><S-Tab>'] = 'which_key_ignore',
+      -- ['<leader>u'] = 'which_key_ignore',
+      -- ['<leader>q'] = 'which_key_ignore',
     }
   end,
 }

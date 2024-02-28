@@ -1,5 +1,6 @@
 -- Themery block
 -- This block will be replaced by Themery.
-vim.cmd("colorscheme tokyonight-moon")
-vim.g.theme_id = 2
+vim.cmd("colorscheme dracula")
+vim.g.theme_id = 9
 -- end themery block
+require("colorizer").setup()

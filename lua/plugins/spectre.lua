@@ -1,16 +1,38 @@
 return {
   'nvim-pack/nvim-spectre',
-  event = { 'BufReadPost', 'BufNewFile' },
-  vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', {
-    desc = 'Toggle Spectre',
-  }),
-  -- vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
-  --   desc = 'Search current word',
-  -- }),
-  -- vim.keymap.set('v', '<leader>Sv', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
-  --   desc = 'Search current word',
-  -- }),
-  -- vim.keymap.set('n', '<leader>Sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
-  --   desc = 'Search on current file',
-  -- }),
+  opts = {
+    is_block_ui_break = true,
+    mapping = {
+      ['send_to_qf'] = {
+        map = '<leader><f11>',
+        cmd = "<cmd>lua require('spectre.actions').send_to_qf()<cr>",
+        desc = 'send all items to quickfix',
+      },
+      ['replace_cmd'] = {
+        map = '<leader><f12>',
+        cmd = "<cmd>lua require('spectre.actions').replace_cmd()<cr>",
+        desc = 'input replace command',
+      },
+      ['show_option_menu'] = {
+        map = '<leader><f9>',
+        cmd = "<cmd>lua require('spectre').show_options()<cr>",
+        desc = 'show options',
+      },
+      ['run_current_replace'] = {
+        map = '<leader><f8>',
+        cmd = "<cmd>lua require('spectre.actions').run_current_replace()<cr>",
+        desc = 'replace current line',
+      },
+      ['run_replace'] = {
+        map = '<leader><f7>',
+        cmd = "<cmd>lua require('spectre.actions').run_replace()<cr>",
+        desc = 'replace all',
+      },
+      ['change_view_mode'] = {},
+    },
+    event = { 'bufreadpost', 'bufnewfile' },
+    vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").toggle()<cr>', {
+      desc = 'toggle spectre',
+    }),
+  },
 }

@@ -18,8 +18,6 @@ return {
         -- themeConfigFile = "~/.config/nvim/lua/theme.lua", -- Described below
         themeConfigFile = '' .. vim.fn.stdpath 'config' .. '/lua/colors.lua',
         livePreview = true, -- Apply theme while browsing. Default to true.
-
-      
       }
     end,
   },

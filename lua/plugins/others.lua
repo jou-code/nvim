@@ -7,9 +7,10 @@ return {
   -- Remember last place on each file
   { 'farmergreg/vim-lastplace' },
   { 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false }, event = { 'BufReadPost', 'BufNewFile' } },
-  { 'norcalli/nvim-colorizer.lua',
+  {
+    'norcalli/nvim-colorizer.lua',
     config = function()
-      require 'colorizer'.setup({})
-    end
+      require('colorizer').setup {}
+    end,
   },
 }

@@ -9,6 +9,14 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move to right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move to lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move to upper window' })
 
+
+vim.cmd 'cabbrev W w'
+vim.cmd 'cabbrev Wq wq'
+vim.cmd 'cabbrev Wqa wqa'
+vim.cmd 'cabbrev WQ wq'
+vim.cmd 'cabbrev WQa wqa'
+vim.cmd 'cabbrev WQA wqa'
+
 vim.keymap.set('n', '<leader>q', ':q<CR>', { desc = 'Close Buffer', silent = true })
 
 vim.keymap.set('n', '<leader>t', ':vsplit<CR>:terminal<CR>a', { desc = 'Vertical Terminal', silent = true })

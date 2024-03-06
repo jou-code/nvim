@@ -30,7 +30,12 @@ return {
     --   config = bar
     --   end,
   },
-  -- add dracula
+{
+  "binhtran432k/dracula.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+},
   {
     'Mofiqul/dracula.nvim',
     opts = {

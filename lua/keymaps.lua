@@ -29,6 +29,7 @@ vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'Center when Scroll Page' })
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>', { desc = 'Quit Search' })
 vim.keymap.set('n', 'Q', '<nop>', { desc = 'Disable Macro' })
+vim.keymap.set('n', 'R', '<nop>', { desc = 'Disable Replace mode' })
 vim.keymap.set('n', 'q', '<nop>', { desc = 'Disable Macro' })
 vim.keymap.set('n', '<C-o>', '<nop>', { desc = 'Disable Macro' })
 vim.cmd 'cabbrev Q q'

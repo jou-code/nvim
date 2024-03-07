@@ -9,3 +9,10 @@ Escreva aqui os problemas que achar ou mudancas que gostaria :)
 
 
 OBS: Smpre commit e push quando escrever algo aqui :)
+
+if
+while
+else if
+main
+malloc
+printf

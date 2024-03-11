@@ -30,6 +30,11 @@ return {
     --   config = bar
     --   end,
   },
+  {
+    'LunarVim/lunar.nvim',
+    lazy = false,
+    priority = 1000,
+  },
 {
   "binhtran432k/dracula.nvim",
   lazy = false,

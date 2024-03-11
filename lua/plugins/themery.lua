@@ -14,6 +14,7 @@ return {
           'onedark',
           'oxocarbon',
           'dracula',
+          'lunar',
         },
         -- themeConfigFile = "~/.config/nvim/lua/theme.lua", -- Described below
         themeConfigFile = '' .. vim.fn.stdpath 'config' .. '/lua/colors.lua',

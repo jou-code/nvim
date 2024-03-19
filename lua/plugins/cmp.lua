@@ -2,7 +2,7 @@ return {
   'hrsh7th/nvim-cmp',
   event = 'InsertEnter',
   dependencies = {
-      'L3MON4D3/LuaSnip',
+    'L3MON4D3/LuaSnip',
     'saadparwaiz1/cmp_luasnip',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-path',
@@ -23,7 +23,7 @@ return {
         ['<C-j>'] = cmp.mapping.select_next_item(),
         ['<C-k>'] = cmp.mapping.select_prev_item(),
         ['<C-Enter>'] = cmp.mapping.confirm { select = true },
-
+        ['<C-y>'] = cmp.mapping.confirm { select = true },
         ['<C-Space>'] = cmp.mapping.complete {},
 
         ['<C-l>'] = cmp.mapping(function()

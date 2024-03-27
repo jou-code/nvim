@@ -1,4 +1,4 @@
-return { -- Highlight, edit, and navigate code
+return {
   'nvim-treesitter/nvim-treesitter',
   event = 'VeryLazy',
   build = ':TSUpdate',
@@ -9,6 +9,7 @@ return { -- Highlight, edit, and navigate code
       auto_install = true,
       highlight = { enable = true },
       indent = { enable = true },
+      autotag = { enable = true },
     }
   end,
 }

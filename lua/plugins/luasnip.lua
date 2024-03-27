@@ -1,6 +1,6 @@
 return {
-  'l3mon4d3/luasnip',
-  event = 'insertenter',
+  'L3MON4D3/LuaSnip',
+  event = 'InsertEnter',
   build = (function()
     if vim.fn.has 'win32' == 1 or vim.fn.executable 'make' == 0 then
       return
@@ -11,7 +11,7 @@ return {
     local ls = require 'luasnip'
     ls.config.set_config {
       history = true,
-      pdateevents = 'textchanged,textchandei',
+      pdateevents = 'TextChanged,TextChandeI',
       auto_snippets = true,
     }
     require('luasnip.loaders.from_lua').load { paths = vim.fn.stdpath 'config' .. '/snippets' }

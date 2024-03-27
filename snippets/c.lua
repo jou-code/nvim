@@ -6,19 +6,20 @@ local insert = ls.insert_node
 local choice = ls.choice_node
 local func = ls.function_node
 local rep = extras.rep
+
 ls.add_snippets('c', {
   snipept('main', {
-    text 'int main(int argc, char *argv[]){',
-    text { '', '\t' },
+    text 'int main(int argc, char *argv[])',
+    text {'', '{', '', '\t' },
     insert(1),
-    text { '', '', '\treturn 0;' },
+    text { '', '\treturn 0;' },
     text { '', '}' },
   }),
 })
 ls.add_snippets('cpp', {
   snipept('typedef', {
     text 'typedef struct ',
-    insert(1, 'Name'),
+    insert(1),
     text { '', '{', '\t' },
     insert(2),
     text { '', '} \t' },
@@ -59,7 +60,7 @@ ls.add_snippets('c', {
   snipept('while', {
     text 'while (',
     insert(1),
-    text ') {',
+    text {')', '{'},
     text { '', '\t' },
     insert(2),
     text { '', '}' },
@@ -70,9 +71,9 @@ ls.add_snippets('c', {
     insert(1),
     text ' = ',
     text 'malloc(sizeof(',
-    insert(2, 'Type'),
+    insert(2),
     text ') * ',
-    insert(3, 'Quantity'),
+    insert(3),
     text ');',
     text { '', 'if (!' },
     rep(1),

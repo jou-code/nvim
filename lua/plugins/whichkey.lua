@@ -8,7 +8,13 @@ return {
       },
     }
     require('which-key').register {
-      -- ['<leader>q'] = 'which_key_ignore',
+      ['<leader>l'] = 'which_key_ignore',
+      ['<leader>h'] = 'which_key_ignore',
+      ['<leader>k'] = 'which_key_ignore',
+      ['<leader>j'] = 'which_key_ignore',
+      ['<leader>w'] = 'which_key_ignore',
+      ['<leader>q'] = 'which_key_ignore',
+      ['<leader>'] = '<Space>',
     }
   end,
 }
